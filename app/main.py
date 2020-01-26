@@ -46,7 +46,7 @@ def main():
             with get_writer("./output.gif", mode="I", fps=fps) as writer:
                 for pic in pics:
                     writer.append_data(imread(f"{path_to_src}{pic}"))
-                print(f"{fps} Done!")
+                print(f"Done!")
         except Exception as e:
             print(f"ERR: {e}")
 
